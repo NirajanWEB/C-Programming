@@ -1,0 +1,19 @@
+/* element selector */
+h2, h1{
+    color: green;
+}
+/* id selector */
+#head1
+{
+    color:red;
+}
+/* class selector */
+.class1{
+    color:blue;
+}
+h1 span{
+    color: yellow;
+}
+h2 span{
+    color: tomato;
+}
