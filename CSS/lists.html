@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>list style</title>
+    <style>
+    ul.a{
+        /* list-style-type:circle; */
+        /* list-style-image: url('fire.jpg');
+        list-style-position: inside; */
+        list-style: inside url('fire.jpg');
+        text-align:center;
+    }
+    ul.b{
+        list-style-type:none;
+    }
+    ol.c{
+        list-style-type:upper-alpha;
+    }
+    ol.d{
+        list-style-type: lower-greek;
+    }
+    </style>
+</head>
+<body>
+    <ul class="a">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ul class="b">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ol class="c">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol class="d">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+</body>
+</html>
