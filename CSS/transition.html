@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition example</title>
+    <style>
+        div{
+            position: relative;
+            top:50vh;
+            left:50vw;
+            height:100px;
+            width:100px;
+            background-color: red;
+            transition-property: all;
+            transition-duration: 1s;
+            /* transition-delay: 1s; */
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: linear; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-timing-function: cubic-bezier(0.075, 1, 0.165, 1) */
+        }
+        div:hover{
+            /* width:600px; */
+            transform:rotate(1440deg);
+            /* transform: rotateY(360deg) */
+            /* transform:skew(360deg) */
+            /* height:300px; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+
+    </div>
+</body>
+</html>

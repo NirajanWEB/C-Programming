@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table Css</title>
+    <style>
+        table,th,td{
+            border:2px solid red;
+            /* border-radius: 10px; */
+        }
+        table{
+            border-collapse: collapse;
+            width:100%;
+            background-color: yellowgreen;
+        }
+        th,td{
+            height:30px;
+            text-align:center;
+            vertical-align: center;
+        }
+        tr:nth-child(even)
+        {
+            background-color: aqua;
+        }
+        tr:hover{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Head 1</th>
+            <th>Head 2</th>
+            <th>Head 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+    </table>
+</body>
+</html>
