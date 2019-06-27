@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String Methods</title>
+</head>
+<body>
+    <p id="p1">This is a very long non long unicode string</p>
+    <h1 id="res"></h1>
+    <h2 id="res1"></h2>
+    <h2 id="res2"></h2>
+    <script>
+    var str = document.getElementById('p1').innerHTML;
+    document.getElementById('res').innerHTML = "The length is : "+str.length;
+    document.getElementById('res1').innerHTML = "The Index of : "+str.indexOf('long',17);
+    document.getElementById('res2').innerHTML = "The Last Index of : "+str.lastIndexOf('long');
+    
+    </script>
+</body>
+</html>

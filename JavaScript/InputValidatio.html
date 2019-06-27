@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    User Name : <input type="text" id="user"><br>
+    
+    Password  : <input type="text" id="pwd"><br>
+    <span id="msg"></span>
+    <button type="submit" onclick="Validity1();">submit</button>
+
+    <script>
+    function Validity1()
+    {    
+        var usr = document.getElementById('user').value;
+        var pwd = document.getElementById('pwd').value;
+        var pwdPatt = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+        if(pwdPatt.test(pwd))
+        {
+            document.getElementById('msg').innerHTML = "Success"+"<br>";
+            document.getElementById('msg').style.color = "green";
+        }
+        else
+        {
+            document.getElementById('msg').innerHTML = "PassWord is Invalid"+"<br>";
+            document.getElementById('msg').style.color = "red";
+        }
+    
+    }
+    
+    </script>
+</body>
+</html>
