@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" height="200" width="400" style="border:1px solid red;">
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.moveTo(200,20);
+        ctx.lineTo(100,170);
+        ctx.strokeStyle = "green";
+        ctx.stroke();
+        ctx.moveTo(200,20);
+        ctx.lineTo(300,170);
+        ctx.stroke();
+        ctx.moveTo(100,170);
+        ctx.lineTo(300,170);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(200,120,40,0,2*Math.PI);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(180,105,8,0,2*Math.PI);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(220,105,8,0,2*Math.PI);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(200,125,5,0,2*Math.PI);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(200,135,15,0,Math.PI);
+        ctx.stroke();
+        ctx.moveTo(200,120);
+        ctx.lineTo(200,130);
+        ctx.stroke();
+        ctx.moveTo(180,103);
+        ctx.lineTo(180,113);
+        ctx.stroke();
+        ctx.moveTo(220,103);
+        ctx.lineTo(220,113);
+        ctx.stroke();
+    </script>
+</body>
+</html>

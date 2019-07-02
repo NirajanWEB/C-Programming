@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "p1"></p>
+    <button onclick="popup();">PoP UP</button>
+    <script>
+        function popup()
+        {
+            // alert("This is an alert box");
+            // var x = confirm("Ok or Cancel message");
+            // if(x == true)
+            // {
+            //     document.getElementById("p1").innerHTML = "OK";
+            // }
+            // else
+            // {
+            //     document.getElementById("p1").innerHTML = "Cancelled";    
+            // }
+            var x = prompt("Enter any thing");
+            document.getElementById("p1").innerHTML = "You Entered : "+x; 
+        }
+    </script>
+</body>
+</html>
