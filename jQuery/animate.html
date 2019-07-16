@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{        
+            height:100px;
+            width:100px;
+            background-color: chartreuse;
+            border: 3px solid red;
+            border-radius:50%;
+            left:'0vw'; 
+            top:'45vh';
+            position: relative;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div>
+    </div>
+    <script>
+        $(document).ready(function loop(){
+            var div = $('div');
+            // div.animate({left:'0px', top: '0px'},1000);
+            div.animate({left:'45vw', top:'80vh', backgroundColor:'red'},5000);
+            div.animate({left:'90vw', top:'45vh'},5000);
+            div.animate({left:'45vw', top:'0vh'},5000);
+            div.animate({left:'0vw', top:'45vh'},5000);
+            loop();
+        });
+    </script>
+</body>
+</html>

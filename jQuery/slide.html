@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width:100%;
+            background-color: burlywood;
+            border:1px solid black;
+        }
+        #flip{
+            text-align: center;
+        }
+        #panel{
+            display:none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="flip">click to slide</div>
+    <div id="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eos nulla modi placeat qui culpa, quas consequuntur, itaque 
+            sunt nostrum error ipsum ea ratione odit delectus. Eum reiciendis 
+            reprehenderit vitae quos?</p>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $('#flip').click(function(){
+            // $('#panel').slideDown();
+            // $('#panel').slideUp();
+            $('#panel').slideToggle();
+        });
+    });
+    </script>
+</body>
+</html>

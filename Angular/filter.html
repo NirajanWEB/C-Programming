@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>filter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <input type="text" ng-model="demo">
+    <h3>{{demo | uppercase}}</h3>
+    <h3>{{demo | lowercase}}</h3>
+    <script>
+        var app = angular.module('myApp',[]);
+        app.controller('myCtrl',function($scope){
+            $scope.demo="";
+        });
+
+    </script>
+</body>
+</html>

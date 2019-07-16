@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hide Show</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body ng-app="">
+
+    <div ng-init = "mylist=['table','chair','bench','car','bus']">
+        <ol>
+            <li ng-repeat="x in mylist">{{x}}</li>
+        </ol>
+    </div>
+
+    <input type="checkbox" ng-model="myCheck">
+    <div >
+        <form action="">
+            username: <input type="text" ng-model="usr" ng-show="myCheck"><br>
+            password: <input type="text" ng-model="pwd" ng-hide="myCheck">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+</body>
+</html>

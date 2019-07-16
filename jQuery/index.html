@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <form action="">
+        username: <input type="text"><br>
+        password: <input type="text" name="" id="">
+    </form>
+    <p>This is a text</p>
+    <p>This is a p tag</p>
+    <p>This is called paragraph</p>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('form').hide(500);
+                $('p').show(500);
+            });
+            $('#show').click(function(){
+                $('form').show(500);
+                $('p').hide(500);
+            });
+            $('#toggle').click(function(){
+                $('form').toggle(3000);
+            });
+        });
+        // $(document).ready(function(){
+        //     $('p').dblclick(function(){
+        //         $('p').hide();
+        //     })
+        // });
+        // $(function(){
+        //     $('p').on({
+        //         click: function(){
+        //             $(this).css("background-color","red");
+        //         },
+        //         dblclick: function(){
+        //             $(this).css("color", "white");
+        //         },
+        //         mouseenter : function(){
+        //             $(this).css("font-size", "20px");
+        //         },
+        //         mouseleave : function(){
+        //             $(this).css("font-weight","bold");
+        //         }
+        //     });
+        // });
+    </script>
+</body>
+</html>
